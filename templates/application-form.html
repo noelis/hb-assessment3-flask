@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+    <title>Skills-HTML-CSS</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+<!-- Header and explanatory text about this page -->
+<h1>Job Application</h1>
+<div class="application_info">
+    <label for="application_info">Thank you for your interest in Ubermelons.<br><br>Here you will find a list of the available roles in the company. If we find you are a great match, we will reach out to you directly for more information.</label>
+</div>
+<br>
+    <form action="/application" method="POST">
+        <label for="firstname" id="firstname">First Name: </label><input type="text" name="firstname" required>
+        <br>
+        <br>
+
+        <label for="lastname" id="lastname">Last Name: </label><input type="text" name="lastname" required>
+         <br>
+         <br>
+
+        <label for="salary_requirements" id="salaryreq">Salary Requirements: </label><input type="number" name="salaryreq" min="70000" max="300000" required>
+        <br>
+        <br>
+
+        <label for="selectjob" id="job">Open Jobs: </label><select name="job" required>
+            <option value="Software Engineer">Software Engineer</option>
+            <option value="QA Engineer">QA Engineer</option>
+            <option value="Product Manager">Product Manager</option>
+        <br>
+        <br>
+        <input type="Submit">
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+
+    {% block title%} Application Response {% endblock %}
+
+
+<!-- Response message -->
+{% block body %}
+
+    <label for="application_response">Thank you, {{ firstname }} {{ lastname }}, for applying to be a {{ job }}. Your
+    minimum salary requirement is {{salaryreq}} dollars.</label>
+
+{% endblock %}
+
+
