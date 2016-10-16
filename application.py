@@ -18,12 +18,14 @@ def index_page():
 
 @app.route("/application-form", methods=['GET'])
 def application_form():
-    """Shows the job application page."""
+    """Shows the job application form."""
 
     return render_template("application-form.html")
 
+
 @app.route("/application", methods=['POST'])
 def application_submitted():
+    """Shows the application page w/ a message that the form has been received."""
 
     firstname = request.form.get('firstname')
     lastname = request.form.get('lastname')

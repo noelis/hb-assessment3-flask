@@ -7,11 +7,15 @@
 <body>
 
 <!-- Header and explanatory text about this page -->
+
 <h1>Job Application</h1>
 <div class="application_info">
     <label for="application_info">Thank you for your interest in Ubermelons.<br><br>Here you will find a list of the available roles in the company. If we find you are a great match, we will reach out to you directly for more information.</label>
 </div>
 <br>
+
+<!-- Job Application form (first/last name, salary reqs and job applying for) using POST method -->
+
     <form action="/application" method="POST">
         <label for="firstname" id="firstname">First Name: </label><input type="text" name="firstname" required>
         <br>
